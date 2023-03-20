@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music webpage</title>
+    {{!--
+    <link rel="stylesheet" href="./css/style.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #020a19;
+            width: 100%;
+            height: 6em;
+            color: white;
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            flex-direction: column;
+            display: inline-block;
+            font-size: larger;
+            margin-left: 2em;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            position: absolute;
+            right: 5%;
+        }
+
+        .list-Item {
+            text-align: center;
+        }
+
+        body {
+            background-color: #1a0650;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .myImage {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main {
+            position: relative;
+            background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        p {
+            color: white;
+        }
+
+        .material {
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    {{>header}}
+    <div class="main">
+        <div class="material">
+            <div class="m1">
+                <h1>Music For Everyone.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi architecto, unde laborum
+                    accusamus magni commodi, quod veniam rem dicta facere nihil, molestiae obcaecati molestias
+                    necessitatibus ipsam distinctio sint quia eaque ut rerum velit. Cum!</p>
+                    <br>    
+            <div class="new-button">
+            <button class="btn btn-danger" >Download App Now</button>
+            <button class="btn btn-secondary" style="margin-left: 5%;">Start Free Trail</button>
+        </div>
+            </div>
+        </div>
+         
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>

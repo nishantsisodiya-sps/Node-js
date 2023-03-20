@@ -1,28 +1,71 @@
-header{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
     background-color: #020a19;
     width: 100%;
     height: 6em;
     color: white;
     display: flex;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
     flex-direction: column;
     display: inline-block;
     font-size: larger;
     margin-left: 2em;
+    cursor: pointer;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
 }
-.button{
+
+.button {
     position: absolute;
     right: 5%;
 }
-.list-Item{
+
+.list-Item {
     text-align: center;
 }
-body{
+
+body {
     background-color: #1a0650;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.myImage {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+p {
+    color: white;
+}
+
+.material {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
