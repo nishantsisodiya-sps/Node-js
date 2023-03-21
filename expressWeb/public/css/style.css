@@ -157,7 +157,7 @@ body{
 /* tempreature details style */
 
 .tempInformation{
-    width: 40rem;
+    width: 50rem;
     margin: auto;
     min-width: 20rem;
     background-color: #323544;
@@ -217,7 +217,7 @@ sup{
 }
 
 .data_hide{
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: all 0.3s linear;
 }
 
