@@ -15,14 +15,13 @@ const getInfo = async (event)=>{
         datahide.classList.add('data_hide');
     }else{
         try{
-            debugger
+     
             let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=ff1bc4683fc7325e9c57e586c20cc03e`;
             const response = await fetch(url);
             const data = await response.json();
             console.log(data);
             const arrData = [data];
-
-            city_name.innerText = `${arr[0].name} , ${arr[0].sys.country}`;
+            city_name.innerText = `${arrData[0].name} , ${arrData[0].sys.country}`;
             temp_real_val.innerText = arrData[0].main.temp;
 
             let tempMod = arrData[0].weather[0].main;
@@ -42,7 +41,8 @@ const getInfo = async (event)=>{
             datahide.classList.remove('data_hide');
 
         }
-        catch{
+        catch(err){
+            console.log(err);
             city_name.innerHTML = 'Please Enter Correct city';
             datahide.classList.add('data_hide')
         }
