@@ -29,6 +29,9 @@ const studentSchema = new mongoose.Schema({
     address : {
         required : true,
         type : String
+    },
+    avtar : {
+        type : String
     }
 })
 
